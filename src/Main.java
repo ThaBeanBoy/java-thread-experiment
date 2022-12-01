@@ -12,7 +12,7 @@ public class Main {
                 throw new Exception("Invalid positive integer");
 
             for(int i = 0; i < numberOfThreads; i++){
-                Thread t = new Thread(new ThreadExperiment("Thread " + i, 5));
+                Thread t = new Thread(new ThreadExperiment("Thread " + i, 3));
                 t.start();
             }
 
