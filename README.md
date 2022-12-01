@@ -1,12 +1,10 @@
 # Java Thread Experiment
-
-## Index
-- [Description](##Description)
-- [Threads](##Threads)
-  - [ThreadExperiment Class](ThreadExperiment Class)
-  - [Executing Threads](###Executing Threads)
-  - [Explanation of Threads Execution](###Explanation of Threads Execution)
-
+- [Java Thread Experiment](#java-thread-experiment)
+    * [Description](#description)
+    * [Threads](#threads)
+        + [ThreadExperiment Class](#threadexperiment-class)
+        + [Executing Threads](#executing-threads)
+        + [Explanation of Threads Execution](#explanation-of-threads-execution)
 ## Description
 
 I wanted to experiment with threads in Java. I also went through some other things that I found interesting such as exception handling.
