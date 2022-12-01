@@ -1,8 +1,20 @@
+import java.util.Scanner;
+import java.util.InputMismatchException;
 public class Main {
     public static void main(String[] args) {
-        Thread t = new Thread(new ThreadExperiment("Secondary", 5));
+        final Scanner Read = new Scanner(System.in);
 
-        t.start();
-        System.out.println("From Main Thread");
+        try{
+            System.out.print("How many threads would you like ? ");
+            int numberOfThreads = Read.nextInt();
+            for(int i = 0; i < numberOfThreads; i++){
+                Thread t = new Thread(new ThreadExperiment("Thread " + i, 5));
+                t.start();
+            }
+
+            System.out.println("From Main Thread");
+        }catch(InputMismatchException e){
+            System.out.println("Please input an integer");
+        }
     }
 }

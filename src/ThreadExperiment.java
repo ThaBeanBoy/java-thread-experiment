@@ -9,7 +9,7 @@ public class ThreadExperiment implements Runnable {
     @Override
     public void run(){
         for(int i = 0; i < this.Reps; i++){
-            System.out.println(this.ThreadName + " " + i);
+            System.out.println(this.ThreadName + " : " + i);
 
             try{
                 Thread.sleep(1000);
