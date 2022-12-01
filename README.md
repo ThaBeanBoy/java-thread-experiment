@@ -1,7 +1,11 @@
 # Java Thread Experiment
 
 ## Index
-[Description](##Description)
+- [Description](##Description)
+- [Threads](##Threads)
+  - [ThreadExperiment Class](ThreadExperiment Class)
+  - [Executing Threads](###Executing Threads)
+  - [Explanation of Threads Execution](###Explanation of Threads Execution)
 
 ## Description
 
@@ -73,3 +77,7 @@ Thread 1 : 1
 Thread 0 : 2
 Thread 1 : 2
 ```
+
+### Explanation of Threads Execution
+
+In the main func
