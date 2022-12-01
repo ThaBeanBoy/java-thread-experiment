@@ -7,6 +7,10 @@ public class Main {
         try{
             System.out.print("How many threads would you like ? ");
             int numberOfThreads = Read.nextInt();
+
+            if(numberOfThreads < 0)
+                throw new Exception("Invalid positive integer");
+
             for(int i = 0; i < numberOfThreads; i++){
                 Thread t = new Thread(new ThreadExperiment("Thread " + i, 5));
                 t.start();
@@ -15,6 +19,8 @@ public class Main {
             System.out.println("From Main Thread");
         }catch(InputMismatchException e){
             System.out.println("Please input an integer");
+        }catch(Exception e){
+            System.out.println(e.getMessage());
         }
     }
 }
