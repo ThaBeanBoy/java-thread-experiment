@@ -78,4 +78,8 @@ Thread 1 : 2
 
 ### Explanation of Threads Execution
 
-In the main func
+In the loop of the ```ThreadExperiment``` class, there's a 1-second gap between each cycle because of the ```Thread. sleep(1000);``` method.
+
+Although the Thread objects are instantiated & executed first (by the start method), **"From Main Thread"** will be displayed first, because of the 1-second delay in the Thread objects & because the Threads' run methods are being executed on a different thread.
+
+## Exception Handling

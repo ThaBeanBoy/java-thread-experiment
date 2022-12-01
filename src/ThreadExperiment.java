@@ -1,6 +1,6 @@
 public class ThreadExperiment implements Runnable {
-    private String ThreadName;
-    private int Reps;
+    private final String ThreadName;
+    private final int Reps;
     public ThreadExperiment(String ThreadName, int Reps){
         this.ThreadName = ThreadName;
         this.Reps = Reps;
